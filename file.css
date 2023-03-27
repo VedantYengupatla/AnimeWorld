@@ -1,0 +1,104 @@
+#titan-home::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background: url("/attackontitan.jpg")no-repeat center center/cover;
+    z-index: -1;
+}
+
+#titan-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:70%;
+    z-index: -2;
+}
+#titan-title{
+    position: relative;
+}
+#titan-title h3{
+   padding: 20px;
+   font-size: 23px;
+   font-weight: 700;
+   position: relative;
+   top:-330px;
+   color: #ffffff;
+   background: #000;
+   background: rgba( 17, 1, 1, 0.75 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 6px );
+   -webkit-backdrop-filter: blur( 6px );
+   /* border-radius: 10px; */
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+    background: #ff0000;
+    overflow: hidden;
+    z-index: 1;
+}
+.card:hover img{
+    transition:transform 1s ease-in-out ;
+    transform: scale(1.1);
+}
+.card img{
+    position: relative;
+    left:-200px;
+    width:185%;
+    z-index: -1;
+}
+#titan-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-125px;
+    padding: 10px;
+    background: #000;
+   background: rgba( 17, 1, 1, 0.75 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 6px );
+   -webkit-backdrop-filter: blur( 6px );
+   /* border-radius: 10px; */
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+   transition: 0s;
+}
+.card:hover #titan-hover{
+    transform: translateY(-80px);
+    transition: transform 0.5s ease-in-out;
+}
+#titan-hover button{
+    margin: 10px;
+    padding: 10px 20px;
+    /* border: none; */
+    border-radius: 5px;
+}
+#watch{
+    background: rgba( 0, 142, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    /* border-radius: 10px; */
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #fff;
+    font-weight: 600;
+}
+#download{
+    background: rgb(56, 165, 255);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+color: #fff;
+font-weight: 600;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
